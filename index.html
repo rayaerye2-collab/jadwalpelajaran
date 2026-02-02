@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section with Clock -->
+        <header class="glass-panel header-panel">
+            <div class="date-menu">
+                <div class="menu-item">
+                    <span class="label">HARI</span>
+                    <span class="value" id="current-day">Senin</span>
+                </div>
+                <div class="divider"></div>
+                <div class="menu-item">
+                    <span class="label">TANGGAL</span>
+                    <span class="value" id="current-date">01 Jan 2026</span>
+                </div>
+                <div class="divider"></div>
+                <div class="menu-item">
+                    <span class="label">JAM</span>
+                    <span class="value" id="current-time">00:00:00</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Live Status Section -->
+        <div class="glass-panel status-panel" id="status-panel">
+            <div class="status-box current">
+                <span class="status-label">SEDANG BERLANGSUNG</span>
+                <h2 id="current-subject">-</h2>
+                <span class="status-time" id="current-time-range"></span>
+            </div>
+            <div class="status-divider"></div>
+            <div class="status-box next">
+                <span class="status-label">SELANJUTNYA</span>
+                <h3 id="next-subject">-</h3>
+                <span class="status-time" id="next-start-time"></span>
+            </div>
+        </div>
+
+        <!-- Main Schedule Content -->
+        <main>
+            <h1 class="page-title">Jadwal Pelajaran</h1>
+
+            <div class="schedule-grid" id="schedule-container">
+                <!-- Schedule items will be injected here by JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
